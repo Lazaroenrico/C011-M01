@@ -8,7 +8,7 @@ console.log()
 console.log(' Digite exatamenta da forma que será exiba em cada pergunta feita !')
 console.log()
 const name = prompt('Digite seu nome: ');
-
+console.log()
 console.log(`As raças existentes dentro do mundo de Xainlog são:
  
 Demonio
