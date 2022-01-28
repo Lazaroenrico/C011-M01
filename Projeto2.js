@@ -43,7 +43,9 @@ while(finish = 'sim'){
   
   for (round = round ; round >= 0  ; round--) {
     let round1 = +prompt(' Escolha um número de 1 até 3: ')
-   
+    console.log()
+    console.log(`ATENÇÃO! Caso venha escolher um número que não
+   seja oque foi atribuido, você perderá uma de suas rodadas. `)
     console.log()
 
    let random = Math.floor(Math.random() *3 + 1);
