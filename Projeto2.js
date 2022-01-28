@@ -31,7 +31,12 @@ let score1 = 0
 console.log()
 let round = +prompt('Quantas rodadas você deseja jogar? ');
 let finish 
+console.log()
+console.log(`Lembrete:
 
+1 equivale a Espécie dos Demónios
+2 equivale a Espécie das Fadas
+3 equivale a Espécie dos Anões`)
 
 console.log() 
 while(finish = 'sim'){
@@ -71,8 +76,6 @@ while(finish = 'sim'){
    
   
     console.log();
-
-
     
 
   } if (score > score1){
