@@ -34,7 +34,7 @@ let finish
 
 
 console.log() 
-do{
+while(finish = 'sim'){
   
   for (round = round ; round >= 0  ; round--) {
     let round1 = +prompt(' Escolha um número de 1 até 3: ')
@@ -43,19 +43,18 @@ do{
 
    let random = Math.floor(Math.random() *3 + 1);
    console.log(`A escolha do computador foi: ${random} `);
-   
     if( round1 == 1 && random == 3 || round1 == 2 && random == 1 || round1 == 3 && random == 2 ){
      score++
 
-    console.log('Você ganhou esta rodada. ')
+    console.log('Você ganhou esta rodada. ');
 
     }else if (round1 == 3 && random == 1 || round1 == 1 && random ==2 || round1 == 2 && random == 3){
            score1++
 
-          console.log(`O computador ganhou esta rodada.`)
+          console.log(`O computador ganhou esta rodada.`);
 
       }else if (random = round1){
-        console.log('Ocorreu um empate. ')
+        console.log('Ocorreu um empate. ');
       }
 
      
@@ -63,20 +62,20 @@ do{
         console.log('Iválido');
         round1--;
       }
-    console.log()
+    console.log();
 
     console.log(` Você ainda tem ${round} rodadas`);
 
-    console.log()
+    console.log();
     console.log('-----------------------------------------');
    
   
     console.log();
 
-  }
 
+    
 
-  if (score > score1){
+  } if (score > score1){
     console.log(`Você foi o grande campeão do Game, possuindo ${score} pontos. `)
   }else if(score1 > score){
     console.log(`O computador foi o grande campeão do Game possuindo ${score1} pontos.`)
@@ -87,5 +86,5 @@ do{
   finish = prompt(`Mesmo com o game sendo finalizado, há uma possibilide de joga-lo
 novamente, caso queira, digite 'sim' ou caso não queira digite 'nao: `)
 
-}while(finish == 'sim')
+}
 
