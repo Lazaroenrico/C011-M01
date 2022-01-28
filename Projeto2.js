@@ -39,7 +39,7 @@ console.log(`Lembrete:
 3 equivale a Espécie dos Anões`)
 
 console.log() 
-while(finish = 'sim'){
+do{
   
   for (round = round ; round >= 0  ; round--) {
     let round1 = +prompt(' Escolha um número de 1 até 3: ')
@@ -91,5 +91,5 @@ while(finish = 'sim'){
   finish = prompt(`Mesmo com o game sendo finalizado, há uma possibilide de joga-lo
 novamente, caso queira, digite 'sim' ou caso não queira digite 'nao: `)
 
-}
+}while(finish = 'sim')
 
