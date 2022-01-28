@@ -44,15 +44,15 @@ do{
    let random = Math.floor(Math.random() *3 + 1);
    console.log(`A escolha do computador foi: ${random} `);
    
-    if( round1 == 1, random == 3 || round1 == 2, random == 1 || round1 == 3, random == 2 ){
+    if( round1 == 1 && random == 3 || round1 == 2 && random == 1 || round1 == 3 && random == 2 ){
      score++
 
-    console.log(`O computador ganhou esta rodada.`)
+    console.log('Você ganhou esta rodada. ')
 
-    }else if (round1 == 3, random == 1 || round1 == 1, random ==2 || round1 == 2, random == 3){
+    }else if (round1 == 3 && random == 1 || round1 == 1 && random ==2 || round1 == 2 && random == 3){
            score1++
 
-          console.log(`Você ganhou esta rodada.`)
+          console.log(`O computador ganhou esta rodada.`)
 
       }else if (random = round1){
         console.log('Ocorreu um empate. ')
