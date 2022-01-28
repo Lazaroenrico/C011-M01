@@ -45,7 +45,7 @@ do{
     let round1 = +prompt(' Escolha um número de 1 até 3: ')  
     console.log()
     
-    while( round1 > 4 || round1 == ' ' || isNaN(round1) || round == ''  ){
+    while( round1 > 4 || round1 == ' ' || isNaN(round1) ){
       console.log()
       console.log('Iválido');
       console.log()
