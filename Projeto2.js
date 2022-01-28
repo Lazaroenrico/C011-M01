@@ -30,10 +30,7 @@ let score = 0
 let score1 = 0
 console.log()
 let round = +prompt('Quantas rodadas você deseja jogar? ');
-let finish 
-console.log()
-console.log(`ATENÇÃO! Caso venha escolher um número que não 
-seja oque foi atribuido, você perderá uma de suas rodadas. `)
+let finish
 console.log()
 console.log(`Lembrete:
 
@@ -47,10 +44,19 @@ do{
   for (round = round ; round >= 0  ; round--) {
     let round1 = +prompt(' Escolha um número de 1 até 3: ')  
     console.log()
+    
+    while( round1 > 4 || round1 == ' ' || isNaN(round1) || round == ''  ){
+      console.log()
+      console.log('Iválido');
+      console.log()
+      round1 = +prompt('Digite um número válido: ')
+      round1--;
+     } 
 
    let random = Math.floor(Math.random() *3 + 1);
    console.log(`A escolha do computador foi: ${random} `);
-    if( round1 == 1 && random == 3 || round1 == 2 && random == 1 || round1 == 3 && random == 2 ){
+
+   if ( round1 == 1 && random == 3 || round1 == 2 && random == 1 || round1 == 3 && random == 2 ){
      score++
     console.log()
     console.log('Você ganhou esta rodada. ');
@@ -65,12 +71,6 @@ do{
         console.log('Ocorreu um empate. ');
       }
 
-     
-      while( round1 > 4 || round1 == ' ' || isNaN(round1)   ){
-        console.log()
-        console.log('Iválido');
-        round1--;
-      }
     console.log();
 
     console.log(` Você ainda tem ${round} rodadas`);
