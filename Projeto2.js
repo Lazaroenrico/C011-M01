@@ -84,10 +84,10 @@ do{
 
   } if (score > score1){
     console.log()
-    console.log(`Você foi o grande campeão do Game, possuindo ${score} pontos. `)
+    console.log(`Você foi o grande campeão do Game, possuindo ${score} ponto(s). `)
   }else if(score1 > score){
     console.log()
-    console.log(`O computador foi o grande campeão do Game possuindo ${score1} pontos.`)
+    console.log(`O computador foi o grande campeão do Game possuindo ${score1} ponto(s).`)
   }
   console.log()
   console.log()
@@ -95,5 +95,5 @@ do{
   finish = prompt(`Mesmo com o game sendo finalizado, há uma possibilide de joga-lo
 novamente, caso queira, digite 'sim' ou caso não queira digite 'nao: `)
 
-}while(finish = 'sim')
+}while(finish == 'sim')
 
