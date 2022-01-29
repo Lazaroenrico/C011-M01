@@ -26,8 +26,8 @@ Anões ganham de Fadas \n
 você selecionou. \n
  O game é jogado em rodas escolhidas pelo jogador ! `);
 
-let player = [0]
-let computer = [0]
+let player = [0,0]
+let computer = [0,0]
 
 console.log()
 
@@ -89,12 +89,12 @@ do{
   
   } if (player > computer){
     console.log()
-    console.log(`Você foi o grande campeão do Game, possuindo ${player} ponto(s). 
-    E o computador perdeu o Game, possuindo ${computer} ponto(s)`)
+    console.log(`Você foi o grande campeão do Game, possuindo ${player[0]} ponto(s). 
+    E o computador perdeu o Game, possuindo ${computer[1]} ponto(s)`)
   }else if(computer > player){
     console.log()
-    console.log(`O computador foi o grande campeão do Game possuindo ${computer} ponto(s).
-    E você perdeu o Gamer, possuindo ${player} ponto(s).`)
+    console.log(`O computador foi o grande campeão do Game possuindo ${computer[0]} ponto(s).
+    E você perdeu o Gamer, possuindo ${player[1]} ponto(s).`)
   }
   console.log()
   console.log()
