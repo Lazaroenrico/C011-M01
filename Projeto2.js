@@ -26,55 +26,55 @@ Anões ganham de Fadas \n
 você selecionou. \n
  O game é jogado em rodas escolhidas pelo jogador ! `);
 
-let player = [0,0]
-let computer = [0,0]
+let player = [0,0];
+let computer = [0,0];
 
-console.log()
+console.log();
 
 let finish
-console.log()
+console.log();
 console.log(`Lembrete:
 
 1 equivale a Espécie dos Demónios
 2 equivale a Espécie das Fadas
-3 equivale a Espécie dos Anões`)  
+3 equivale a Espécie dos Anões`)  ;
 
-console.log() 
+console.log() ;
 do{
   let round = +prompt('Quantas rodadas você deseja jogar? ');
 
-  console.log()
+  console.log();
 
   for (round = round ; round > 0  ; round--) {
     let round1 = +prompt(' Escolha um número de 1 até 3: ')  
-    console.log()
+    console.log();
     
-    while( round1 > 4 || round1 == ' ' || isNaN(round1) ){
-      console.log()
+    while( round1 != 1 && round1 != 2 &&  round1 != 3 || isNaN(round1) ){
+      console.log();
       console.log('Iválido');
-      console.log()
-      round1 = +prompt('Digite um número válido: ')
-      round1--;
+      console.log();
+      round1 = +prompt('Digite um número válido: ');
+      console.log();
      } 
      
      let random = Math.floor(Math.random() *3 + 1);
     console.log(`A escolha do computador foi: ${random} `);
 
    if ( (round1 == 1 && random == 3 ) || ( round1 == 2 && random == 1 ) ||( round1 == 3 && random == 2 ) ){
-     player[0]++
-     computer[1]++
-    console.log()
+     player[0]++;
+     computer[1]++;
+    console.log();
     console.log('Você ganhou esta rodada. ');
 
     }else if ( (round1 == 3 && random == 1) || (round1 == 1 && random ==2) || (round1 == 2 && random == 3) ){
-          player[1]++
-          computer[0]++
+          player[1]++;
+          computer[0]++;
 
-          console.log()
+          console.log();
           console.log(`O computador ganhou esta rodada.`);
 
       }else if (random = round1){
-        console.log()
+        console.log();
         console.log('Ocorreu um empate. ');
       }
 
@@ -90,18 +90,20 @@ do{
   } if (player > computer){
     console.log()
     console.log(`Você foi o grande campeão do Game, possuindo ${player[0]} ponto(s). 
-    E o computador perdeu o Game, possuindo ${computer[1]} ponto(s)`)
+    E o computador perdeu o Game, possuindo ${computer[1]} ponto(s)`);
   }else if(computer > player){
     console.log()
     console.log(`O computador foi o grande campeão do Game possuindo ${computer[0]} ponto(s).
-    E você perdeu o Gamer, possuindo ${player[1]} ponto(s).`)
+    E você perdeu o Gamer, possuindo ${player[1]} ponto(s).`);
+  } else if( computer == player ){
+    console.log(`Ocorreu um empate e com isso não houve nenhum jogador.`)
   }
-  console.log()
-  console.log()
+  console.log();
+  console.log();
   
   finish = prompt(`Mesmo com o game sendo finalizado, há uma possibilide de joga-lo
-novamente, caso queira, digite 'sim' ou caso não queira digite 'nao: `)
-console.log()
+novamente, caso queira digite 'sim' ou caso não queira digite 'nao': `);
+console.log();
 
-} while(finish.toLowerCase() == 'sim')
+} while(finish.toLowerCase() == 'sim');
 
