@@ -73,7 +73,7 @@ do{
           console.log();
           console.log(`O computador ganhou esta rodada.`);
 
-      }else if (random = round1){
+      }else if (random == round1){
         console.log();
         console.log('Ocorreu um empate. ');
       }
