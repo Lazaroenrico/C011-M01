@@ -1,1 +1,1 @@
-# Projeto (A Jornada do Herói e Jokenpo )
+# Projeto (A Jornada do Herói)
